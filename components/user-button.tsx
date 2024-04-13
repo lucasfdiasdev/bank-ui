@@ -23,9 +23,9 @@ const UserButton = () => {
               className="object-cover object-center cursor-pointer shadow-sm"
             />
           </Avatar>
-          <div className="hidden md:flex flex-col text-sm">
-            <label className="font-semibold">lucasferndias@gmail.com</label>
-            <label className="text-muted-foreground">Lucas Dias</label>
+          <div className="hidden md:flex flex-col">
+            <label className="text-muted-foreground text-xs">OLÁ, LUCAS</label>
+            <label className="font-semibold text-sm">***.***.000-00</label>
           </div>
         </div>
       </DropdownMenuTrigger>

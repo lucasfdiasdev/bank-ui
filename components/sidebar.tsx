@@ -1,11 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Montserrat_Alternates } from "next/font/google";
-import { Landmark, LayoutDashboard, Settings } from "lucide-react";
+
+import {
+  Home,
+  Store,
+  Landmark,
+  HandCoins,
+  HandHeart,
+  TrendingUp,
+  CreditCard,
+  CircleDollarSign,
+} from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat_Alternates({
   weight: "600",
@@ -14,14 +24,44 @@ const montserrat = Montserrat_Alternates({
 
 const routes = [
   {
-    label: "Dashboard",
-    icon: LayoutDashboard,
+    label: "Home",
+    icon: Landmark,
     href: "/",
-    color: "text-sky-500",
+    color: "text-white",
   },
   {
-    label: "Settings",
-    icon: Settings,
+    label: "Conta Digital",
+    icon: CircleDollarSign,
+    href: "/settings",
+  },
+  {
+    label: "Cartões",
+    icon: CreditCard,
+    href: "/settings",
+  },
+  {
+    label: "Investimentos",
+    icon: TrendingUp,
+    href: "/settings",
+  },
+  {
+    label: "Crédito",
+    icon: HandCoins,
+    href: "/settings",
+  },
+  {
+    label: "Imobilário",
+    icon: Home,
+    href: "/settings",
+  },
+  {
+    label: "Inter Shop",
+    icon: Store,
+    href: "/settings",
+  },
+  {
+    label: "Serviços",
+    icon: HandHeart,
     href: "/settings",
   },
 ];
