@@ -22,7 +22,7 @@ const SidebarMobile = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button className="md:hidden" variant={"outline"} size={"icon"}>
+        <Button className="lg:hidden" variant={"outline"} size={"icon"}>
           <Menu />
         </Button>
       </SheetTrigger>

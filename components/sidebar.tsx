@@ -32,37 +32,37 @@ const routes = [
   {
     label: "Conta Digital",
     icon: CircleDollarSign,
-    href: "/settings",
+    href: "/conta-digital",
   },
   {
     label: "Cartões",
     icon: CreditCard,
-    href: "/settings",
+    href: "/cards",
   },
   {
     label: "Investimentos",
     icon: TrendingUp,
-    href: "/settings",
+    href: "/investimentos",
   },
   {
     label: "Crédito",
     icon: HandCoins,
-    href: "/settings",
+    href: "/credito",
   },
   {
     label: "Imobilário",
     icon: Home,
-    href: "/settings",
+    href: "/imobiliario",
   },
   {
-    label: "Inter Shop",
+    label: "IBank Shop",
     icon: Store,
-    href: "/settings",
+    href: "/ibank-shop",
   },
   {
     label: "Serviços",
     icon: HandHeart,
-    href: "/settings",
+    href: "/servicos",
   },
 ];
 
@@ -70,7 +70,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-orange-500 text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-orange-400 text-white">
       <div className="px-3 py-2 flex-1">
         <Link href={"/"} className="flex items-center pl-3 mb-14">
           <Landmark size={32} className="relative mr-4" />
